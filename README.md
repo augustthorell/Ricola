@@ -3,6 +3,6 @@
 
 ## Contributors
 
-Fanny Johansson
+Fanny Johansson  
 
 August Thorell
