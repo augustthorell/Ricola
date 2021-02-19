@@ -4,4 +4,5 @@
 ## Contributors
 
 Fanny Johansson
+
 August Thorell
