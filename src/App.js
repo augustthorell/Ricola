@@ -1,10 +1,10 @@
 import './css/App.css';
+import Start from './components/start.js'
 
 function App() {
   return (
     <div className="App">
-      <h1>Team 1</h1>
-      <p>Creating a page for Ricola</p>
+      <Start />
     </div>
   );
 }
