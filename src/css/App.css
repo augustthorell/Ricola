@@ -5,24 +5,34 @@
 	src: local('Frutiger Next Condensed'),
 		url('../fonts/Frutiger_Next_Condensed.woff') format('woff');
 }
+:root {
+	--main-button-bg: #ffcc00;
+	--main-bg: #eef1f1;
+	--main-font: 'Frutiger Next Condensed';
+}
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Frutiger Next Condensed';
+	overflow: hidden;
+}
+.App {
+	height: 100vh;
+	width: 100vw;
 }
 .startComponent {
 	height: 100vh;
 	width: 100vw;
-	background-color: #d2eceb;
-	background-image: url('../assets/startBackground.jpg');
+	background-color: var(--main-bg);
+	background-image: url('../assets/background.png');
 	background-position: bottom;
 	background-size: 100vw;
 	background-repeat: no-repeat;
 }
 
 .startLogo {
-	width: 300px;
+	width: 250px;
+	margin-bottom: 5%;
 }
 
 .tools {
@@ -30,4 +40,67 @@
 	top: 50%;
 	left: 50%;
 	z-index: 100;
+}
+
+.startText {
+	font-family: var(--main-font);
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	z-index: 100;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#buttonNature {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+}
+#buttonBusiness {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#buttonPeople {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+}
+#buttonGoBack {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.button-not-showing {
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1rem;
+	border: 0;
+	background-color: var(--main-button-bg);
+	padding: 0.7rem;
+	border-radius: 10px;
+	outline-style: none;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 0.5s linear;
+}
+.button-showing {
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1rem;
+	border: 0;
+	background-color: var(--main-button-bg);
+	padding: 0.7rem;
+	border-radius: 10px;
+	outline-style: none;
+	z-index: 100;
+	visibility: visible;
+	transition: visibility 1s, opacity 0.3s linear;
+	opacity: 1;
 }
