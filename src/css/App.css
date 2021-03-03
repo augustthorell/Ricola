@@ -35,6 +35,15 @@
 .startLogo {
 	width: 200px;
 	margin-bottom: 5%;
+	
+}
+.logoContainer {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	margin-top: 10px;
 }
 
 .tools {
@@ -47,7 +56,7 @@
 .startText {
 	font-family: var(--main-font);
 	position: absolute;
-	top: 15%;
+	top: 150px;
 	left: 50%;
 	z-index: 100;
 	transform: translate(-50%, -50%);
@@ -115,6 +124,11 @@
 	font-weight: bold;
 	font-size: 1.5rem;
 	text-align: right;
+}
+
+.navMenu a {
+	text-decoration: none;
+	color: #000;
 }
 
 /* Nature popup divs */
