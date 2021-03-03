@@ -9,12 +9,14 @@
 	--main-button-bg: #ffcc00;
 	--main-bg: #eef1f1;
 	--main-font: 'Frutiger Next Condensed';
+	--second-font: 'meta serif pro';
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 .App {
 	height: 100vh;
@@ -31,7 +33,7 @@
 }
 
 .startLogo {
-	width: 250px;
+	width: 200px;
 	margin-bottom: 5%;
 }
 
@@ -54,17 +56,17 @@
 
 #buttonNature {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 25%;
 }
 #buttonBusiness {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 50%;
 }
 #buttonPeople {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 75%;
 }
 #buttonGoBack {
@@ -103,4 +105,49 @@
 	visibility: visible;
 	transition: visibility 1s, opacity 0.3s linear;
 	opacity: 1;
+}
+
+.navMenu {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: right;
+}
+
+.naturediv {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	width: 100%;
+	height: 50%;
+}
+
+.natureBoxInfo {
+	position: absolute;
+	width: 30%;
+	visibility: visible;
+	transition: visibility 1s, opacity 0.3s linear;
+	opacity: 1;
+	background-color: var(--main-button-bg);
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+
+.natureBoxInfo h3 {
+	font-family: var(--main-font);
+	padding-bottom: 0.2rem;
+}
+
+.natureBoxInfo p {
+	font-family: var(--second-font);
+	font-size: 0.8rem;
+}
+
+.naturedivNotShowing {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 0.5s linear;
 }

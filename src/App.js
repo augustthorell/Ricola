@@ -1,6 +1,7 @@
 import './css/App.css'
 import React, { useState } from 'react'
 import Start from './components/start.js'
+import Nav from './components/nav.js'
 import { motion } from 'framer-motion'
 
 function App() {
@@ -8,12 +9,10 @@ function App() {
 
 	const [xValueActive, setXValueActive] = useState()
 
-	const yValue = '-50%'
-
 	const variant = {
 		active: {
 			x: xValueActive,
-			y: yValue,
+			y: '-50%',
 			scale: 2,
 		},
 		inactive: {
@@ -32,46 +31,63 @@ function App() {
 				animate={isActive ? 'active' : 'inactive'}
 				transition={transition}
 			></motion.div>
+			<div>
+				<button
+					id="buttonNature"
+					className={isActive ? 'button-not-showing' : 'button-showing'}
+					onClick={() => {
+						setIsActive(!isActive)
+						setXValueActive('50%')
+					}}
+				>
+					Nature
+				</button>
+				<button
+					id="buttonBusiness"
+					className={isActive ? 'button-not-showing' : 'button-showing'}
+					onClick={() => {
+						setIsActive(!isActive)
+						setXValueActive('0%')
+					}}
+				>
+					Business
+				</button>
+				<button
+					id="buttonPeople"
+					className={isActive ? 'button-not-showing' : 'button-showing'}
+					onClick={() => {
+						setIsActive(!isActive)
+						setXValueActive('-50%')
+					}}
+				>
+					People
+				</button>
+				<button
+					id="buttonGoBack"
+					className={isActive ? 'button-showing' : 'button-not-showing'}
+					onClick={() => {
+						setIsActive(false)
+					}}
+				>
+					Back
+				</button>
+			</div>
 
-			<button
-				id="buttonNature"
-				className={isActive ? 'button-not-showing' : 'button-showing'}
-				onClick={() => {
-					setIsActive(!isActive)
-					setXValueActive('50%')
-				}}
-			>
-				Nature
-			</button>
-			<button
-				id="buttonBusiness"
-				className={isActive ? 'button-not-showing' : 'button-showing'}
-				onClick={() => {
-					setIsActive(!isActive)
-					setXValueActive('0%')
-				}}
-			>
-				Business
-			</button>
-			<button
-				id="buttonPeople"
-				className={isActive ? 'button-not-showing' : 'button-showing'}
-				onClick={() => {
-					setIsActive(!isActive)
-					setXValueActive('-50%')
-				}}
-			>
-				People
-			</button>
-			<button
-				id="buttonGoBack"
-				className={isActive ? 'button-showing' : 'button-not-showing'}
-				onClick={() => {
-					setIsActive(false)
-				}}
-			>
-				Back
-			</button>
+			<div className={isActive ? 'naturediv' : 'naturedivNotShowing'}>
+				<div className="natureBoxInfo" id="natureBox1">
+					<h3>Biodiversity</h3>
+					<p>
+						Establish Ricola Biodiversity Principles (In Global Supply Chain)
+						100% Of Swiss Herbs Come From Sustainable Agriculture Zero
+						Pesticides
+					</p>
+				</div>
+				{/* <div className="natureBoxInfo" id="natureBox2"></div>
+				<div className="natureBoxInfo" id="natureBox3"></div>
+				<div className="natureBoxInfo" id="natureBox4"></div> */}
+			</div>
+
+			<Nav />
 		</div>
 	)
 }
