@@ -1,11 +1,40 @@
-import './css/App.css'
+
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
+/****** Components *****/
 import Start from './components/start.js'
 import Nav from './components/nav.js'
-import { motion } from 'framer-motion'
 import ButtonHomePage from './components/buttonHomepage.js'
 
+/****** CSS *****/
+import './css/App.css'
+
+/****** Pages ******/
+import Watch from './pages/watch'
+import HowWeWork from './pages/howWeWork'
+import SustainabilityMagazine from './pages/sustainabilityMagazine'
+
 function App() {
+	return (
+		<Router>
+			<div>
+				<Nav />
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/watch" component={Watch} />
+					<Route path="/HowWeWork" component={HowWeWork} />
+					<Route path="/SustainabilityMagazine" component={SustainabilityMagazine} />
+
+				</Switch>
+			</div>
+		</Router>
+	);
+}
+
+
+const Home = () => {
 	const [isActive, setIsActive] = useState(false)
 
 	const [xActive, setXActive] = useState('')
@@ -79,7 +108,7 @@ function App() {
 						100% FSC Certification For The „Böxli“.
 					</p>
 				</div>
-  
+
 			</div>
 
 			<Nav />
