@@ -3,15 +3,23 @@ import React, { useState } from 'react'
 import Start from './components/start.js'
 import Nav from './components/nav.js'
 import { motion } from 'framer-motion'
+import ButtonHomePage from './components/buttonHomepage.js'
 
 function App() {
 	const [isActive, setIsActive] = useState(false)
 
-	const [xValueActive, setXValueActive] = useState()
+	const [xActive, setXActive] = useState('')
+
+
+	function handleClick(item) {
+		setXActive(item)
+		setIsActive(previsActive => !previsActive)
+	}
+
 
 	const variant = {
 		active: {
-			x: xValueActive,
+			x: xActive,
 			y: '-50%',
 			scale: 2,
 		},
@@ -21,7 +29,7 @@ function App() {
 			scale: 1,
 		},
 	}
-	console.log(variant.active)
+
 	return (
 		<div>
 			<Start />
@@ -29,49 +37,12 @@ function App() {
 				className="startComponent"
 				variants={variant}
 				animate={isActive ? 'active' : 'inactive'}
-				transition={transition}
-			></motion.div>
-			<div>
-				<button
-					id="buttonNature"
-					className={isActive ? 'button-not-showing' : 'button-showing'}
-					onClick={() => {
-						setIsActive(!isActive)
-						setXValueActive('50%')
-					}}
-				>
-					Nature
-				</button>
-				<button
-					id="buttonBusiness"
-					className={isActive ? 'button-not-showing' : 'button-showing'}
-					onClick={() => {
-						setIsActive(!isActive)
-						setXValueActive('0%')
-					}}
-				>
-					Business
-				</button>
-				<button
-					id="buttonPeople"
-					className={isActive ? 'button-not-showing' : 'button-showing'}
-					onClick={() => {
-						setIsActive(!isActive)
-						setXValueActive('-50%')
-					}}
-				>
-					People
-				</button>
-				<button
-					id="buttonGoBack"
-					className={isActive ? 'button-showing' : 'button-not-showing'}
-					onClick={() => {
-						setIsActive(false)
-					}}
-				>
-					Back
-				</button>
-			</div>
+				transition={transition}>
+
+			</motion.div>
+
+			<ButtonHomePage items={xActive} active={isActive} onClick={handleClick} />
+
 
 			<div className={isActive ? 'naturediv' : 'naturedivNotShowing'}>
 				<div className="natureBoxInfo" id="natureBox1">
@@ -82,9 +53,9 @@ function App() {
 						Pesticides
 					</p>
 				</div>
-				<div className="natureBoxInfo" id="natureBox2"></div>
+				{/* <div className="natureBoxInfo" id="natureBox2"></div>
 				<div className="natureBoxInfo" id="natureBox3"></div>
-				<div className="natureBoxInfo" id="natureBox4"></div>
+				<div className="natureBoxInfo" id="natureBox4"></div> */}
 			</div>
 
 			<Nav />
