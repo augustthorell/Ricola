@@ -127,7 +127,7 @@
 
 .natureBoxInfo {
 	position: absolute;
-	width: 30%;
+	width: 20%;
 	visibility: visible;
 	transition: visibility 1s, opacity 0.3s linear;
 	opacity: 1;
