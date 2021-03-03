@@ -39,12 +39,10 @@ const Home = () => {
 
 	const [xActive, setXActive] = useState('')
 
-
 	function handleClick(item) {
 		setXActive(item)
-		setIsActive(previsActive => !previsActive)
+		setIsActive((previsActive) => !previsActive)
 	}
-
 
 	const variant = {
 		active: {
@@ -66,12 +64,10 @@ const Home = () => {
 				className="startComponent"
 				variants={variant}
 				animate={isActive ? 'active' : 'inactive'}
-				transition={transition}>
-
-			</motion.div>
+				transition={transition}
+			></motion.div>
 
 			<ButtonHomePage active={isActive} onClick={handleClick} />
-
 
 			<div className={isActive ? 'naturediv' : 'naturedivNotShowing'}>
 				<div className="natureBoxInfo" id="natureBox1">
@@ -85,17 +81,6 @@ const Home = () => {
 					</p>
 				</div>
 				<div className="natureBoxInfo" id="natureBox2">
-					<h3>Energy & Emissions</h3>
-					<p>
-						-100% Emission Transparency; Scope 1, 2, 3.
-						<br /> 100% Renewable Energy; Scope 1
-					</p>
-				</div>
-				<div className="natureBoxInfo" id="natureBox3">
-					<h3>Water</h3>
-					<p>Water Reduction In Ricola; Scope 1.</p>
-				</div>
-				<div className="natureBoxInfo" id="natureBox4">
 					<h3>Waste</h3>
 					<p>
 						Reduce Waste In Production; Scope 1.
@@ -108,7 +93,17 @@ const Home = () => {
 						100% FSC Certification For The „Böxli“.
 					</p>
 				</div>
-
+				<div className="natureBoxInfo" id="natureBox3">
+					<h3>Water</h3>
+					<p>Water Reduction In Ricola; Scope 1.</p>
+				</div>
+				<div className="natureBoxInfo" id="natureBox4">
+					<h3>Energy & Emissions</h3>
+					<p>
+						-100% Emission Transparency; Scope 1, 2, 3.
+						<br /> 100% Renewable Energy; Scope 1
+					</p>
+				</div>
 			</div>
 
 			<Nav />
