@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/App.css'
 
 
-function buttonHomepage({ items, active, onClick }) {
+function buttonHomepage({ active, onClick }) {
     return (
         <div>
             <button

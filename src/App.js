@@ -41,7 +41,7 @@ function App() {
 
 			</motion.div>
 
-			<ButtonHomePage items={xActive} active={isActive} onClick={handleClick} />
+			<ButtonHomePage active={isActive} onClick={handleClick} />
 
 
 			<div className={isActive ? 'naturediv' : 'naturedivNotShowing'}>
