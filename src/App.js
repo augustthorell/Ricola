@@ -82,9 +82,9 @@ function App() {
 						Pesticides
 					</p>
 				</div>
-				{/* <div className="natureBoxInfo" id="natureBox2"></div>
+				<div className="natureBoxInfo" id="natureBox2"></div>
 				<div className="natureBoxInfo" id="natureBox3"></div>
-				<div className="natureBoxInfo" id="natureBox4"></div> */}
+				<div className="natureBoxInfo" id="natureBox4"></div>
 			</div>
 
 			<Nav />
