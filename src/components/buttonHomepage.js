@@ -25,13 +25,7 @@ function buttonHomepage({ active, onClick }) {
 			>
 				People
 			</button>
-			<button
-				id="buttonGoBack"
-				className={active ? 'button-showing' : 'button-not-showing'}
-				onClick={() => onClick('0%')}
-			>
-				Back
-			</button>
+
 		</div>
 	)
 }
