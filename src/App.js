@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -7,6 +6,7 @@ import { motion } from 'framer-motion'
 import Start from './components/start.js'
 import Nav from './components/nav.js'
 import ButtonHomePage from './components/buttonHomepage.js'
+import InformationContainer from './components/informationContainer.js'
 
 /****** CSS *****/
 import './css/App.css'
@@ -25,14 +25,15 @@ function App() {
 					<Route path="/" exact component={Home} />
 					<Route path="/watch" component={Watch} />
 					<Route path="/HowWeWork" component={HowWeWork} />
-					<Route path="/SustainabilityMagazine" component={SustainabilityMagazine} />
-
+					<Route
+						path="/SustainabilityMagazine"
+						component={SustainabilityMagazine}
+					/>
 				</Switch>
 			</div>
 		</Router>
-	);
+	)
 }
-
 
 const Home = () => {
 	const [isActive, setIsActive] = useState(false)
@@ -69,42 +70,7 @@ const Home = () => {
 
 			<ButtonHomePage active={isActive} onClick={handleClick} />
 
-			<div className={isActive ? 'naturediv' : 'naturedivNotShowing'}>
-				<div className="natureBoxInfo" id="natureBox1">
-					<h3>Biodiversity</h3>
-					<p>
-						Establish Ricola Biodiversity Principles (In Global Supply Chain).
-						<br />
-						100% Of Swiss Herbs Come From Sustainable Agriculture.
-						<br />
-						Zero Pesticides
-					</p>
-				</div>
-				<div className="natureBoxInfo" id="natureBox2">
-					<h3>Waste</h3>
-					<p>
-						Reduce Waste In Production; Scope 1.
-						<br />
-						Conduct Input/Output Analysis In Distribution And Logistics.
-						<br />
-						Towards Fully Recyclable, Compostable Or Biodegradable; Scope 1, 2,
-						3.
-						<br />
-						100% FSC Certification For The „Böxli“.
-					</p>
-				</div>
-				<div className="natureBoxInfo" id="natureBox3">
-					<h3>Water</h3>
-					<p>Water Reduction In Ricola; Scope 1.</p>
-				</div>
-				<div className="natureBoxInfo" id="natureBox4">
-					<h3>Energy & Emissions</h3>
-					<p>
-						-100% Emission Transparency; Scope 1, 2, 3.
-						<br /> 100% Renewable Energy; Scope 1
-					</p>
-				</div>
-			</div>
+			<InformationContainer active={isActive} xValue={xActive} />
 
 			<Nav />
 		</div>
