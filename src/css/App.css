@@ -22,6 +22,9 @@
 	height: 100vh;
 	width: 100vw;
 }
+button {
+	cursor: pointer;
+}
 .startComponent {
 	height: 100vh;
 	width: 100vw;
@@ -61,6 +64,14 @@
 	z-index: 100;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	visibility: visible;
+	transition: visibility 1s, opacity 0.5s linear;
+	opacity: 1;
+}
+.startTextnotShowing {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 0.5s linear;
 }
 
 #buttonNature {
@@ -112,7 +123,7 @@
 	outline-style: none;
 	z-index: 100;
 	visibility: visible;
-	transition: visibility 1s, opacity 0.3s linear;
+	transition: visibility 1s, opacity 0.5s linear;
 	opacity: 1;
 }
 
@@ -124,6 +135,15 @@
 	font-weight: bold;
 	font-size: 1.5rem;
 	text-align: right;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s, opacity 0.5s linear;
+}
+.navMenuNotShowing {
+	font-family: var(--main-font);
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 0.5s linear;
 }
 
 .navMenu a {

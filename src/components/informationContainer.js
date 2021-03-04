@@ -5,7 +5,6 @@ import PeopleInformation from './peopleInformation.js'
 import '../css/App.css'
 
 function informationContainer({ active, xValue }) {
-	console.log(xValue)
 	return (
 		<div className={active ? 'naturediv' : 'naturedivNotShowing'}>
 			{(() => {
