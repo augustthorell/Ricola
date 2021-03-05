@@ -20,7 +20,7 @@ function App() {
 	return (
 		<Router>
 			<div>
-				<Nav />
+				{/* <Nav /> */}
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/watch" component={Watch} />
