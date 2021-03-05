@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import logo from '../assets/ricola-logo.png'
 
 function Nav({ active, onClick }) {
@@ -13,11 +13,21 @@ function Nav({ active, onClick }) {
 			</div>
 			<div className={active ? 'navMenuNotShowing' : 'navMenu'} >
 				<ul>
-					<Link to="/watch"><li>Watch</li></Link>
-					<br />
-					<Link to="/sustainabilityMagazine"><li>Sustainability Magazine</li></Link>
-					<br />
-					<Link to="/howWeWork"><li>How We Work</li></Link>
+					<Link to="/watch">
+						<li>
+							<span class="arrow">Watch</span>
+						</li>
+					</Link>
+					<Link to="/sustainabilityMagazine">
+						<li>
+							<span class="arrow">Sustainability Magazine</span>
+						</li>
+					</Link>
+					<Link to="/howWeWork">
+						<li>
+							<span class="arrow">How We Work</span>
+						</li>
+					</Link>
 				</ul>
 			</div>
 			<button

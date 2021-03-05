@@ -7,6 +7,7 @@
 }
 :root {
 	--main-button-bg: #ffcc00;
+	--hover-button-bg: #ffda44;
 	--main-bg: #eef1f1;
 	--main-font: 'Frutiger Next Condensed';
 	--second-font: 'meta serif pro';
@@ -38,7 +39,6 @@ button {
 .startLogo {
 	width: 200px;
 	margin-bottom: 5%;
-	
 }
 .logoContainer {
 	position: absolute;
@@ -76,18 +76,18 @@ button {
 
 #buttonNature {
 	position: absolute;
-	top: 60%;
-	left: 25%;
+	top: 55%;
+	left: 23%;
 }
 #buttonBusiness {
 	position: absolute;
-	top: 60%;
-	left: 50%;
+	top: 55%;
+	left: 47%;
 }
 #buttonPeople {
 	position: absolute;
-	top: 60%;
-	left: 75%;
+	top: 55%;
+	left: 72%;
 }
 #buttonGoBack {
 	position: absolute;
@@ -98,10 +98,10 @@ button {
 .button-not-showing {
 	font-family: var(--main-font);
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	border: 0;
 	background-color: var(--main-button-bg);
-	padding: 0.7rem;
+	padding: 0.8rem 1rem;
 	border-radius: 10px;
 	outline-style: none;
 	position: absolute;
@@ -110,22 +110,30 @@ button {
 	z-index: 100;
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility 1s, opacity 0.5s linear;
+	transition: visibility 1s, box-shadow 0.3s, opacity 0.5s linear;
 }
 .button-showing {
 	font-family: var(--main-font);
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	border: 0;
 	background-color: var(--main-button-bg);
-	padding: 0.7rem;
+	box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+	padding: 0.8rem 1rem;
 	border-radius: 10px;
 	outline-style: none;
 	z-index: 100;
 	visibility: visible;
-	transition: visibility 1s, opacity 0.5s linear;
+	transition: visibility 1s, box-shadow 0.3s, background-color 0.2s,
+		opacity 0.3s linear;
 	opacity: 1;
 }
+
+.button-showing:hover {
+	background-color: var(--hover-button-bg);
+}
+
+/* Navmenu */
 
 .navMenu {
 	position: absolute;
@@ -148,27 +156,56 @@ button {
 	transition: visibility 1s, opacity 0.5s linear;
 }
 
+.navMenu ul li {
+	padding: 1rem 1.5rem;
+	transition: transform 0.2s linear;
+}
+.navMenu ul li:hover {
+	transform: translateX(7px);
+}
+
 .navMenu a {
 	text-decoration: none;
 	color: #000;
 }
 
-/* Nature popup divs */
+.arrow {
+	position: relative;
+	border-bottom: 2.2px solid black;
+	padding-bottom: 4px;
+	opacity: 1;
+}
+
+.arrow:after {
+	position: absolute;
+	margin-left: 2px;
+	content: '>';
+	bottom: -14px;
+}
+
+/* Popup divs */
 
 .naturediv {
 	position: absolute;
 	top: 30%;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	visibility: visible;
 	transition: visibility 1s, opacity 0.3s linear;
 	opacity: 1;
+}
+
+.natureContainer,
+.businesssContainer,
+.peopleContainer {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-content: space-between;
 	align-items: flex-start;
 }
+
 .naturedivNotShowing {
 	visibility: hidden;
 	opacity: 0;
@@ -178,27 +215,43 @@ button {
 #natureBox1,
 #natureBox2,
 #natureBox3,
-#natureBox4 {
+#natureBox4,
+#natureBox5,
+#businessBox1,
+#businessBox2,
+#businessBox3,
+#businessBox4,
+#peopleBox1,
+#peopleBox2,
+#peopleBox3,
+#peopleBox4,
+#peopleBox5,
+#peopleBox6 {
 	width: 45%;
+	margin-bottom: 1rem;
 }
 
 #natureBox2 {
 	margin-bottom: 1rem;
 }
 
-.natureBoxInfo {
+#natureBox4 {
+	margin-bottom: 1rem;
+}
+
+.boxInfo {
 	background-color: var(--main-button-bg);
 	padding: 0.5rem 1rem;
 	border-radius: 8px;
-	box-shadow: 0 8px 6px -6px #a6a6a6;
+	box-shadow: 0 8px 6px -6px #d1d1d1;
 }
 
-.natureBoxInfo h3 {
+.boxInfo h3 {
 	font-family: var(--main-font);
 	padding-bottom: 0.4rem;
 }
 
-.natureBoxInfo p {
+.boxInfo p {
 	font-family: var(--second-font);
 	font-size: 0.8rem;
 }
@@ -234,35 +287,110 @@ button {
 @media (min-width: 750px) {
 	.naturediv {
 		position: absolute;
-		top: 30%;
+		top: 20%;
 		width: 100%;
-		height: 50%;
+		z-index: 100;
 	}
 
 	#natureBox1 {
 		position: absolute;
-		left: 5%;
-		width: 25%;
+		left: 3%;
+		width: 28%;
 	}
 
 	#natureBox2 {
 		position: absolute;
-		left: 30%;
-		width: 25%;
-		margin-top: 14%;
+		left: 15%;
+		width: 28%;
+		margin-top: 22rem;
 	}
 
 	#natureBox3 {
 		position: absolute;
-		left: 50%;
-		width: 25%;
+		left: 40%;
+		width: 28%;
+		margin-top: 6rem;
 	}
 
 	#natureBox4 {
 		position: absolute;
+		width: 28%;
+		left: 52%;
+		margin-top: 20rem;
+	}
+
+	#natureBox5 {
+		position: absolute;
+		width: 28%;
+		left: 70%;
+		margin-top: 1rem;
+	}
+
+	#businessBox1 {
+		position: absolute;
+		left: 15%;
+		width: 25%;
+	}
+
+	#businessBox2 {
+		position: absolute;
+		left: 5%;
+		width: 25%;
+		margin-top: 15rem;
+	}
+
+	#businessBox3 {
+		position: absolute;
+		left: 45%;
+		width: 25%;
+		margin-top: 10rem;
+	}
+
+	#businessBox4 {
+		position: absolute;
+		width: 25%;
+		left: 72%;
+		margin-top: 1rem;
+	}
+	#peopleBox1 {
+		position: absolute;
+		left: 2%;
+		width: 25%;
+		margin-top: 1rem;
+	}
+
+	#peopleBox2 {
+		position: absolute;
+		left: 10%;
+		width: 25%;
+		margin-top: 14rem;
+	}
+
+	#peopleBox3 {
+		position: absolute;
+		left: 40%;
+		width: 25%;
+		margin-top: 4rem;
+	}
+
+	#peopleBox4 {
+		position: absolute;
 		width: 25%;
 		left: 70%;
-		margin-top: 10%;
+		margin-top: 15rem;
+	}
+
+	#peopleBox5 {
+		position: absolute;
+		left: 70%;
+		width: 25%;
+	}
+
+	#peopleBox6 {
+		position: absolute;
+		left: 35%;
+		width: 25%;
+		margin-top: 25rem;
 	}
 }
 
@@ -270,7 +398,17 @@ button {
 	#natureBox1,
 	#natureBox2,
 	#natureBox3,
-	#natureBox4 {
+	#natureBox4,
+	#businessBox1,
+	#businessBox2,
+	#businessBox3,
+	#businessBox4,
+	#peopleBox1,
+	#peopleBox2,
+	#peopleBox3,
+	#peopleBox4,
+	#peopleBox5,
+	#peopleBox6 {
 		width: 90%;
 		margin-bottom: 1rem;
 	}
