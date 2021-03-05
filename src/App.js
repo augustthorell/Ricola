@@ -45,6 +45,7 @@ const Home = () => {
 		setIsActive((previsActive) => !previsActive)
 	}
 
+
 	const variant = {
 		active: {
 			x: xActive,
@@ -60,19 +61,16 @@ const Home = () => {
 
 	return (
 		<div>
-			<Start />
+
 			<motion.div
 				className="startComponent"
 				variants={variant}
 				animate={isActive ? 'active' : 'inactive'}
-				transition={transition}
-			></motion.div>
-
+				transition={transition} />
+			<Start active={isActive} />
 			<ButtonHomePage active={isActive} onClick={handleClick} />
-
 			<InformationContainer active={isActive} xValue={xActive} />
-
-			<Nav />
+			<Nav active={isActive} onClick={handleClick} />
 		</div>
 	)
 }
