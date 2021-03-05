@@ -20,14 +20,11 @@ function App() {
 	return (
 		<Router>
 			<div>
-				<Nav />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/watch" component={Watch} />
 					<Route path="/HowWeWork" component={HowWeWork} />
-					<Route
-						path="/SustainabilityMagazine"
-						component={SustainabilityMagazine}
+					<Route path="/SustainabilityMagazine" component={SustainabilityMagazine}
 					/>
 				</Switch>
 			</div>
@@ -44,8 +41,6 @@ const Home = () => {
 		setXActive(item)
 		setIsActive((previsActive) => !previsActive)
 	}
-
-
 	const variant = {
 		active: {
 			x: xActive,
