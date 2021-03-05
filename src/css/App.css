@@ -146,7 +146,9 @@ button {
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 1s, opacity 0.5s linear;
+	
 }
+
 .navMenuNotShowing {
 	font-family: var(--main-font);
 	visibility: hidden;
@@ -253,6 +255,34 @@ button {
 	font-family: var(--second-font);
 	font-size: 0.8rem;
 }
+
+
+
+/***** WATCH PAGE *****/
+.watchBackground {
+	background-color: var(--main-bg);
+}
+.watchContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	width: 80vw;
+	max-width: 1200px;
+	
+}
+.videoPlayer {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	position: relative;
+	padding-top: 56.25%
+}
+.react-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
 
 @media (min-width: 750px) {
 	.naturediv {
