@@ -55,6 +55,11 @@ button {
 	left: 50%;
 	z-index: 100;
 }
+.cloud {
+	background-image: url('../assets/cloud.svg');
+	background-repeat: no-repeat;
+	
+}
 
 .startText {
 	font-family: var(--main-font);
@@ -146,6 +151,8 @@ button {
 	visibility: visible;
 	opacity: 1;
 	transition: visibility 1s, opacity 0.5s linear;
+	z-index: 10;
+	
 }
 
 .navMenuNotShowing {
@@ -266,6 +273,7 @@ button {
 	transform: translate(-50%, -50%);
 	width: 80vw;
 	max-width: 1200px;
+	z-index: 100;
 }
 .videoPlayer {
 	display: block;
