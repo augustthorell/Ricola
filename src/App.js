@@ -7,6 +7,7 @@ import Start from './components/start.js'
 import Nav from './components/nav.js'
 import ButtonHomePage from './components/buttonHomepage.js'
 import InformationContainer from './components/informationContainer.js'
+import Clouds from './components/clouds.js'
 
 /****** CSS *****/
 import './css/App.css'
@@ -20,6 +21,7 @@ function App() {
 	return (
 		<Router>
 			<div>
+				<Clouds className="clouds" />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/watch" component={Watch} />
@@ -66,6 +68,7 @@ const Home = () => {
 			<ButtonHomePage active={isActive} onClick={handleClick} />
 			<InformationContainer active={isActive} xValue={xActive} />
 			<Nav active={isActive} onClick={handleClick} />
+			<Clouds />
 		</div>
 	)
 }
