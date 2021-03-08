@@ -4,12 +4,6 @@ import cloudSVG from '../assets/cloud.svg'
 
 function Clouds() {
 
-    function topValue() {
-        return (
-            '500px'
-        )
-
-    }
     const xValue = '120vw'
 
     const cloud = {
@@ -24,10 +18,12 @@ function Clouds() {
         top: '100px',
         left: '-110px',
         zIndex: '1',
+
     }
     const cloudTransition = {
         duration: 19,
-        repeat: Infinity
+        repeat: Infinity,
+
     }
     return (
         <>
@@ -36,9 +32,7 @@ function Clouds() {
                 style={cloudStyle}
                 animate={cloud}
                 transition={cloudTransition}
-
             />
-
         </>
     )
 }

@@ -15,17 +15,17 @@ function Nav({ active, onClick }) {
 				<ul>
 					<Link to="/watch">
 						<li>
-							<span class="arrow">Watch</span>
+							<span className="arrow">Watch</span>
 						</li>
 					</Link>
 					<Link to="/sustainabilityMagazine">
 						<li>
-							<span class="arrow">Sustainability Magazine</span>
+							<span className="arrow">Sustainability Magazine</span>
 						</li>
 					</Link>
 					<Link to="/howWeWork">
 						<li>
-							<span class="arrow">How We Work</span>
+							<span className="arrow">How We Work</span>
 						</li>
 					</Link>
 				</ul>
