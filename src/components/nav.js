@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/ricola-logo.png'
 
 function Nav({ active, onClick }) {
-
 	return (
 		<>
 			<div className="logoContainer">
@@ -11,7 +10,7 @@ function Nav({ active, onClick }) {
 					<img src={logo} alt="Logo" className="startLogo" />
 				</Link>
 			</div>
-			<div className={active ? 'navMenuNotShowing' : 'navMenu'} >
+			<div className={active ? 'navMenuNotShowing' : 'navMenu'}>
 				<ul>
 					<Link to="/watch">
 						<li>
