@@ -9,7 +9,7 @@ function HowWeWork() {
 		<div className="howWeWorkContainer">
 			<Nav />
 			<div className="howWeWorkContent">
-				<h2>How We Work</h2>
+				<h2>Our Current Work</h2>
 				<section className="articleContainer">
 					<div className="article">
 						<h4>Bee Health</h4>

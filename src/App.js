@@ -21,12 +21,13 @@ function App() {
 	return (
 		<Router>
 			<div>
-				<Clouds className="clouds" />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/watch" component={Watch} />
 					<Route path="/HowWeWork" component={HowWeWork} />
-					<Route path="/SustainabilityMagazine" component={SustainabilityMagazine}
+					<Route
+						path="/SustainabilityMagazine"
+						component={SustainabilityMagazine}
 					/>
 				</Switch>
 			</div>
@@ -58,12 +59,12 @@ const Home = () => {
 
 	return (
 		<div>
-
 			<motion.div
 				className="startComponent"
 				variants={variant}
 				animate={isActive ? 'active' : 'inactive'}
-				transition={transition} />
+				transition={transition}
+			/>
 			<Start active={isActive} />
 			<ButtonHomePage active={isActive} onClick={handleClick} />
 			<InformationContainer active={isActive} xValue={xActive} />
