@@ -17,11 +17,11 @@ function Nav({ active, onClick }) {
 							<span className="arrow">Watch</span>
 						</li>
 					</Link>
-					<Link to="/sustainabilityMagazine">
+					<a href="http://localhost:8000/">
 						<li>
 							<span className="arrow">Sustainability Magazine</span>
 						</li>
-					</Link>
+					</a>
 					<Link to="/howWeWork">
 						<li>
 							<span className="arrow">How We Work</span>

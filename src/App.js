@@ -58,7 +58,6 @@ const Home = () => {
 
 	return (
 		<div>
-
 			<motion.div
 				className="startComponent"
 				variants={variant}
