@@ -9,7 +9,7 @@ export default function watchContainer() {
 				<ReactPlayer
 					className="react-player"
 					controls
-					url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+					url="https://www.youtube.com/watch?v=CXvaGgABk-8&feature=youtu.be"
 					width="100%"
 					height="100%"
 					config={{
