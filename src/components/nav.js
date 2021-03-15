@@ -17,7 +17,7 @@ function Nav({ active, onClick }) {
 							<span className="arrow">Watch</span>
 						</li>
 					</Link>
-					<a href="http://localhost:8000/">
+					<a href="https://augustthorell.github.io/ricola-gatsby/">
 						<li>
 							<span className="arrow">Sustainability Magazine</span>
 						</li>
