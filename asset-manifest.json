@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Ricola/static/css/main.8b93ed60.chunk.css",
-    "main.js": "/Ricola/static/js/main.272c6112.chunk.js",
-    "main.js.map": "/Ricola/static/js/main.272c6112.chunk.js.map",
+    "main.js": "/Ricola/static/js/main.792ae03e.chunk.js",
+    "main.js.map": "/Ricola/static/js/main.792ae03e.chunk.js.map",
     "runtime-main.js": "/Ricola/static/js/runtime-main.74a414ea.js",
     "runtime-main.js.map": "/Ricola/static/js/runtime-main.74a414ea.js.map",
     "static/js/2.71ab8538.chunk.js": "/Ricola/static/js/2.71ab8538.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.74a414ea.js",
     "static/js/2.71ab8538.chunk.js",
     "static/css/main.8b93ed60.chunk.css",
-    "static/js/main.272c6112.chunk.js"
+    "static/js/main.792ae03e.chunk.js"
   ]
 }
