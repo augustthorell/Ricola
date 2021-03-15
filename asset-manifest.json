@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ricola/static/css/main.8b93ed60.chunk.css",
-    "main.js": "/Ricola/static/js/main.b5e6a4fb.chunk.js",
-    "main.js.map": "/Ricola/static/js/main.b5e6a4fb.chunk.js.map",
+    "main.js": "/Ricola/static/js/main.f479437c.chunk.js",
+    "main.js.map": "/Ricola/static/js/main.f479437c.chunk.js.map",
     "runtime-main.js": "/Ricola/static/js/runtime-main.74a414ea.js",
     "runtime-main.js.map": "/Ricola/static/js/runtime-main.74a414ea.js.map",
-    "static/js/2.c482c59c.chunk.js": "/Ricola/static/js/2.c482c59c.chunk.js",
-    "static/js/2.c482c59c.chunk.js.map": "/Ricola/static/js/2.c482c59c.chunk.js.map",
+    "static/js/2.71ab8538.chunk.js": "/Ricola/static/js/2.71ab8538.chunk.js",
+    "static/js/2.71ab8538.chunk.js.map": "/Ricola/static/js/2.71ab8538.chunk.js.map",
     "index.html": "/Ricola/index.html",
     "static/css/main.8b93ed60.chunk.css.map": "/Ricola/static/css/main.8b93ed60.chunk.css.map",
-    "static/js/2.c482c59c.chunk.js.LICENSE.txt": "/Ricola/static/js/2.c482c59c.chunk.js.LICENSE.txt",
+    "static/js/2.71ab8538.chunk.js.LICENSE.txt": "/Ricola/static/js/2.71ab8538.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Ricola/static/media/cloud.494b80a6.svg",
     "static/media/image-19.9697d3aa.png": "/Ricola/static/media/image-19.9697d3aa.png",
     "static/media/image-21.d224ef09.png": "/Ricola/static/media/image-21.d224ef09.png",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.74a414ea.js",
-    "static/js/2.c482c59c.chunk.js",
+    "static/js/2.71ab8538.chunk.js",
     "static/css/main.8b93ed60.chunk.css",
-    "static/js/main.b5e6a4fb.chunk.js"
+    "static/js/main.f479437c.chunk.js"
   ]
 }
