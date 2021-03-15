@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ricola/static/css/main.ae9176ee.chunk.css",
-    "main.js": "/ricola/static/js/main.b5e6a4fb.chunk.js",
-    "main.js.map": "/ricola/static/js/main.b5e6a4fb.chunk.js.map",
-    "runtime-main.js": "/ricola/static/js/runtime-main.b1001d8c.js",
-    "runtime-main.js.map": "/ricola/static/js/runtime-main.b1001d8c.js.map",
-    "static/js/2.c482c59c.chunk.js": "/ricola/static/js/2.c482c59c.chunk.js",
-    "static/js/2.c482c59c.chunk.js.map": "/ricola/static/js/2.c482c59c.chunk.js.map",
-    "index.html": "/ricola/index.html",
-    "static/css/main.ae9176ee.chunk.css.map": "/ricola/static/css/main.ae9176ee.chunk.css.map",
-    "static/js/2.c482c59c.chunk.js.LICENSE.txt": "/ricola/static/js/2.c482c59c.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/ricola/static/media/cloud.494b80a6.svg",
-    "static/media/image-19.9697d3aa.png": "/ricola/static/media/image-19.9697d3aa.png",
-    "static/media/image-21.d224ef09.png": "/ricola/static/media/image-21.d224ef09.png",
-    "static/media/image-22.e878fbff.png": "/ricola/static/media/image-22.e878fbff.png",
-    "static/media/ricola-logo.af2bcf62.png": "/ricola/static/media/ricola-logo.af2bcf62.png"
+    "main.css": "/Ricola/static/css/main.8b93ed60.chunk.css",
+    "main.js": "/Ricola/static/js/main.b5e6a4fb.chunk.js",
+    "main.js.map": "/Ricola/static/js/main.b5e6a4fb.chunk.js.map",
+    "runtime-main.js": "/Ricola/static/js/runtime-main.74a414ea.js",
+    "runtime-main.js.map": "/Ricola/static/js/runtime-main.74a414ea.js.map",
+    "static/js/2.c482c59c.chunk.js": "/Ricola/static/js/2.c482c59c.chunk.js",
+    "static/js/2.c482c59c.chunk.js.map": "/Ricola/static/js/2.c482c59c.chunk.js.map",
+    "index.html": "/Ricola/index.html",
+    "static/css/main.8b93ed60.chunk.css.map": "/Ricola/static/css/main.8b93ed60.chunk.css.map",
+    "static/js/2.c482c59c.chunk.js.LICENSE.txt": "/Ricola/static/js/2.c482c59c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Ricola/static/media/cloud.494b80a6.svg",
+    "static/media/image-19.9697d3aa.png": "/Ricola/static/media/image-19.9697d3aa.png",
+    "static/media/image-21.d224ef09.png": "/Ricola/static/media/image-21.d224ef09.png",
+    "static/media/image-22.e878fbff.png": "/Ricola/static/media/image-22.e878fbff.png",
+    "static/media/ricola-logo.af2bcf62.png": "/Ricola/static/media/ricola-logo.af2bcf62.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1001d8c.js",
+    "static/js/runtime-main.74a414ea.js",
     "static/js/2.c482c59c.chunk.js",
-    "static/css/main.ae9176ee.chunk.css",
+    "static/css/main.8b93ed60.chunk.css",
     "static/js/main.b5e6a4fb.chunk.js"
   ]
 }
